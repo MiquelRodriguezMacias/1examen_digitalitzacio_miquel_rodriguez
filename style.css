@@ -1,0 +1,87 @@
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+#galeria {
+    background-color: rgb(187, 199, 126);
+}
+
+#galeria img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* A partir de 768px cambiamos a versión escritorio */
+@media (min-width: 768px) {
+    #galeria img {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    #galeria img {
+        width: 30%;
+    }
+}
+.contenedor{
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bg-secundario{
+    background-color: var(--secundario);
+}
+
+.boton{
+    background-color: #ff9500;
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+.formulario{
+    background-color: var(--blanco);
+    width: min(60rem,100%);
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.formulario legend{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ff9500;
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    color: var(--secundario);
+    font-weight: bold;
+    display: block;
+}
+
+.input-text{
+    width: 100%;
+}
